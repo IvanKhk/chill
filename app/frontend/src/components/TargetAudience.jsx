@@ -1,4 +1,4 @@
-"import { Brain, Monitor, Heart, ShieldQuestion } from 'lucide-react';
+import { Brain, Monitor, Heart, ShieldQuestion } from 'lucide-react';
 
 export const TargetAudience = () => {
   const audiences = [
@@ -30,48 +30,48 @@ export const TargetAudience = () => {
 
   return (
     <section 
-      className=\"py-24 md:py-32 px-6 md:px-12 lg:px-24\"
-      data-testid=\"target-audience-section\"
+      className="py-24 md:py-32 px-6 md:px-12 lg:px-24"
+      data-testid="target-audience-section"
     >
-      <div className=\"max-w-7xl mx-auto\">
+      <div className="max-w-7xl mx-auto">
         {/* Header */}
-        <div className=\"text-center mb-16\">
-          <p className=\"font-accent text-xl text-primary mb-3\">Мы понимаем</p>
-          <h2 className=\"font-heading text-4xl md:text-5xl font-normal text-foreground mb-4\">
+        <div className="text-center mb-16">
+          <p className="font-accent text-xl text-primary mb-3">Мы понимаем</p>
+          <h2 className="font-heading text-4xl md:text-5xl font-normal text-foreground mb-4">
             Для кого это
           </h2>
-          <p className=\"text-foreground/70 max-w-xl mx-auto\">
+          <p className="text-foreground/70 max-w-xl mx-auto">
             Узнаёте себя? Значит, вы в правильном месте
           </p>
         </div>
 
         {/* Audience Cards */}
-        <div className=\"grid grid-cols-1 md:grid-cols-2 gap-6 lg:gap-8\">
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-6 lg:gap-8">
           {audiences.map((audience, index) => (
             <div 
               key={index}
-              className=\"glass rounded-2xl p-8 hover:border-primary/30 transition-all duration-300\"
+              className="glass rounded-2xl p-8 hover:border-primary/30 transition-all duration-300"
               data-testid={`audience-${index + 1}`}
             >
               {/* Icon */}
-              <div className=\"w-12 h-12 rounded-xl bg-primary/10 flex items-center justify-center mb-5\">
-                <audience.icon className=\"w-6 h-6 text-primary\" />
+              <div className="w-12 h-12 rounded-xl bg-primary/10 flex items-center justify-center mb-5">
+                <audience.icon className="w-6 h-6 text-primary" />
               </div>
 
               {/* Title */}
-              <h3 className=\"font-heading text-xl md:text-2xl font-medium text-foreground mb-4\">
+              <h3 className="font-heading text-xl md:text-2xl font-medium text-foreground mb-4">
                 {audience.title}
               </h3>
 
               {/* Description */}
-              <p className=\"text-foreground/70 leading-relaxed mb-4\">
+              <p className="text-foreground/70 leading-relaxed mb-4">
                 {audience.description}
               </p>
 
               {/* How we help */}
-              <div className=\"pt-4 border-t border-border/50\">
-                <p className=\"text-primary/90 text-sm leading-relaxed\">
-                  <span className=\"font-medium\">Как поможем:</span> {audience.help}
+              <div className="pt-4 border-t border-border/50">
+                <p className="text-primary/90 text-sm leading-relaxed">
+                  <span className="font-medium">Как поможем:</span> {audience.help}
                 </p>
               </div>
             </div>
@@ -81,4 +81,3 @@ export const TargetAudience = () => {
     </section>
   );
 };
-"

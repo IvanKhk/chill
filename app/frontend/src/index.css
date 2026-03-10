@@ -1,108 +1,120 @@
-"@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,400&family=Montserrat:wght@300;400;500;600;700&family=Caveat:wght@400;700&display=swap');
+@import "tailwindcss";
 
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,400&family=Montserrat:wght@300;400;500;600;700&family=Caveat:wght@400;700&display=swap');
 
-@layer base {
-  :root {
-    --background: 160 55% 3%;
-    --foreground: 150 15% 91%;
-    --card: 162 45% 9%;
-    --card-foreground: 150 15% 91%;
-    --popover: 162 45% 9%;
-    --popover-foreground: 150 15% 91%;
-    --primary: 153 52% 46%;
-    --primary-foreground: 160 55% 3%;
-    --secondary: 153 45% 15%;
-    --secondary-foreground: 150 15% 91%;
-    --muted: 153 45% 15%;
-    --muted-foreground: 150 20% 60%;
-    --accent: 11 68% 63%;
-    --accent-foreground: 0 0% 100%;
-    --destructive: 0 72% 37%;
-    --destructive-foreground: 0 0% 100%;
-    --border: 153 45% 15%;
-    --input: 153 45% 15%;
-    --ring: 153 52% 46%;
-    --radius: 0.75rem;
-  }
+/* Базовые переменные темы (как было) */
+:root {
+  --background: 160 55% 3%;
+  --foreground: 150 15% 91%;
+  --card: 162 45% 9%;
+  --card-foreground: 150 15% 91%;
+  --popover: 162 45% 9%;
+  --popover-foreground: 150 15% 91%;
+  --primary: 153 52% 46%;
+  --primary-foreground: 160 55% 3%;
+  --secondary: 153 45% 15%;
+  --secondary-foreground: 150 15% 91%;
+  --muted: 153 45% 15%;
+  --muted-foreground: 150 20% 60%;
+  --accent: 11 68% 63%;
+  --accent-foreground: 0 0% 100%;
+  --destructive: 0 72% 37%;
+  --destructive-foreground: 0 0% 100%;
+  --border: 153 45% 15%;
+  --input: 153 45% 15%;
+  --ring: 153 52% 46%;
+  --radius: 0.75rem;
 }
 
-@layer base {
-  * {
-    @apply border-border;
-  }
-  
-  html {
-    scroll-behavior: smooth;
-  }
-  
-  body {
-    @apply bg-background text-foreground antialiased;
-    font-family: 'Montserrat', sans-serif;
-  }
-  
-  h1, h2, h3, h4, h5, h6 {
-    font-family: 'Cormorant Garamond', serif;
-  }
-  
-  .font-accent {
-    font-family: 'Caveat', cursive;
-  }
-  
-  .font-heading {
-    font-family: 'Cormorant Garamond', serif;
-  }
-  
-  .font-body {
-    font-family: 'Montserrat', sans-serif;
-  }
+/* База без @apply */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  border-color: hsl(var(--border));
 }
 
-@layer utilities {
-  .glass {
-    @apply bg-card/60 backdrop-blur-md border border-primary/10;
-  }
-  
-  .glass-strong {
-    @apply bg-card/80 backdrop-blur-xl border border-primary/20;
-  }
-  
-  .glow {
-    box-shadow: 0 0 20px rgba(82, 183, 136, 0.2);
-  }
-  
-  .glow-strong {
-    box-shadow: 0 0 30px rgba(82, 183, 136, 0.3);
-  }
-  
-  .text-gradient {
-    @apply bg-clip-text text-transparent bg-gradient-to-r from-primary to-[#7dd3a3];
-  }
-  
-  .animate-fade-up {
-    animation: fadeUp 0.6s ease-out forwards;
-  }
-  
-  .animate-fade-in {
-    animation: fadeIn 0.4s ease-out forwards;
-  }
-  
-  .animate-scale-in {
-    animation: scaleIn 0.3s ease-out forwards;
-  }
-  
-  .hover-lift {
-    @apply transition-all duration-300;
-  }
-  
-  .hover-lift:hover {
-    transform: translateY(-4px);
-    box-shadow: 0 10px 40px -10px rgba(0, 0, 0, 0.5);
-  }
+html {
+  scroll-behavior: smooth;
 }
 
+body {
+  margin: 0;
+  background-color: hsl(var(--background));
+  color: hsl(var(--foreground));
+  -webkit-font-smoothing: antialiased;
+  font-family: 'Montserrat', sans-serif;
+}
+
+h1, h2, h3, h4, h5, h6,
+.font-heading {
+  font-family: 'Cormorant Garamond', serif;
+}
+
+.font-accent {
+  font-family: 'Caveat', cursive;
+}
+
+.font-body {
+  font-family: 'Montserrat', sans-serif;
+}
+
+/* Вспомогательные классы (были в @layer utilities) без @apply */
+
+/* стекло */
+.glass {
+  background-color: hsl(var(--card) / 0.6);
+  backdrop-filter: blur(12px);
+  border: 1px solid hsl(var(--primary) / 0.1);
+}
+
+.glass-strong {
+  background-color: hsl(var(--card) / 0.8);
+  backdrop-filter: blur(20px);
+  border: 1px solid hsl(var(--primary) / 0.2);
+}
+
+/* свечение */
+.glow {
+  box-shadow: 0 0 20px rgba(82, 183, 136, 0.2);
+}
+
+.glow-strong {
+  box-shadow: 0 0 30px rgba(82, 183, 136, 0.3);
+}
+
+/* градиентный текст */
+.text-gradient {
+  background-image: linear-gradient(to right, hsl(var(--primary)), #7dd3a3);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+}
+
+/* анимации */
+.animate-fade-up {
+  animation: fadeUp 0.6s ease-out forwards;
+}
+
+.animate-fade-in {
+  animation: fadeIn 0.4s ease-out forwards;
+}
+
+.animate-scale-in {
+  animation: scaleIn 0.3s ease-out forwards;
+}
+
+/* hover-lift */
+.hover-lift {
+  transition: all 0.3s ease;
+}
+
+.hover-lift:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 10px 40px -10px rgba(0, 0, 0, 0.5);
+}
+
+/* keyframes */
 @keyframes fadeUp {
   from {
     opacity: 0;
@@ -134,10 +146,12 @@
   }
 }
 
-[data-debug-wrapper=\"true\"] {
+/* debug wrapper */
+[data-debug-wrapper="true"] {
   display: contents !important;
 }
 
+/* глобальный скроллбар */
 ::-webkit-scrollbar {
   width: 8px;
   height: 8px;
@@ -155,4 +169,3 @@
 ::-webkit-scrollbar-thumb:hover {
   background: hsl(var(--primary) / 0.5);
 }
-"
