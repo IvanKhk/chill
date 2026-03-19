@@ -450,7 +450,7 @@ export const programs = [
     durationText: "4 дня",
     type: "retreat",
     category: ["yoga", "therapy"],
-    digitalDetoxLevel: "hard",
+    digitalDetoxLevel: "strict",
     groupSize: "12",
     intensity: "moderate",
     price: 36000,
