@@ -62,7 +62,20 @@ function App() {
 
   return (
     <div className="App" data-testid="app-container">
-      <Toaster position="top-center" richColors />
+      <Toaster 
+        position="top-center" 
+        richColors
+        toastOptions={{
+          style: {
+            background: "rgb(22, 36, 32)",  // непрозрачный тёмный
+            backdropFilter: "blur(20px)",
+          },
+          classNames: {
+            overlay: "fixed inset-0 z-[9999] bg-black/90 backdrop-blur-md",  // ← непрозрачный фон
+            toast: "bg-card border-0 shadow-2xl",
+          }
+        }}
+      />
 
       <Header onQuizOpen={handleQuizOpen} onScrollTo={handleScrollTo} />
 
