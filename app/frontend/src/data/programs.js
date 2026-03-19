@@ -81,7 +81,7 @@ export const programs = [
     price: 31000,
     priceIncluded: "Проживание, завтраки, все практики из программы (обеды, ужины оплачиваются отдельно).",
     dates: "10-12 июля 2026",
-    image: "https://images.unsplash.com/photo-1506905925346-21bda4d32df4?w=800&q=80",
+    image: "https://optim.tildacdn.com/tild3738-6433-4235-a266-386339616137/-/format/webp/DSC_2969.JPG.webp",
     shortDescription: "Новый короткий формат арт-викенда в коллаборации с нашими друзьями из Дома Авдеева.",
     forWhom: "для всех уровней",
     badges: ["настолки", "парения", "кулинария"],
@@ -149,7 +149,7 @@ export const programs = [
     priceIncluded:
       "Проживание, питание, раздаточный материал и четки для медитации, все занятия программы.",
     dates: "1-5 мая 2026",
-    image: "https://images.unsplash.com/photo-1510798831971-661eb04b3739?w=800&q=80",
+    image: "https://balakhilya.ru/imgs/praktika.jpg",
     shortDescription:
       "В живописном Подмосковье с погружением в медитацию, йогой и мантрами. Откройте духовное знание йоги,обучившись у мирового учителя.",
     forWhom: "для восстановления.",
@@ -287,7 +287,7 @@ export const programs = [
     price: 25000,
     priceIncluded: "экодома, веган, баня",
     dates: "8-11 мая 2026",
-    image: "https://images.unsplash.com/photo-1544367567-0f2fcb009e0b?w=800&q=80",
+    image: "https://yaradom.ru/images/photomain/yaradom_straw_.jpg",
     shortDescription: "Йога и випассана в соломенных экодомах.",
     forWhom:
       "Для жителей мегаполисов, где каждый день наполнен суетой,напряжением и стрессом. Для бизнесменов и руководителей с большим грузом ответственности. Для мам, которые круглые сутки заняты семьёй, не успевая позаботиться о себе.",
@@ -361,7 +361,7 @@ export const programs = [
     priceIncluded:
       "Проживание в 2-3-х местном номере, 3-х разовое вегетарианское питание, практики и расходные материалы для творческих мастер-классов на протяжении всего ретрита.",
     dates: "3-5 апреля 2026",
-    image: "https://images.unsplash.com/photo-1508672019048-805c876b67e2?w=800&q=80",
+    image: "https://optim.tildacdn.com/tild6263-3363-4363-a161-653139356530/-/format/webp/noroot.png.webp",
     shortDescription:
       "На ретрите мы работаем с телом, умом, эмоциями, мыслями, психикой и сознанием, раскрываем источник покоя в самом себе, в своем Сердце и Душе.",
     forWhom: "Уставшие от города.",
@@ -457,7 +457,7 @@ export const programs = [
     priceIncluded:
       "питание, терапия, комфортное размещение, нетворкинг",
     dates: "10-13 апреля 2026",
-    image: "https://images.unsplash.com/photo-1545205597-3d9d02c29597?w=800&q=80",
+    image: "https://static.tildacdn.com/tild3335-6564-4932-b964-356532353062/DSC_8697.jpg",
     shortDescription: "Ретритный центр, где меняются твои состояния.",
     forWhom: "Для внутреннего роста.",
     badges: [
