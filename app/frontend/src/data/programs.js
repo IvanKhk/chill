@@ -136,7 +136,7 @@ export const programs = [
     title: "Мантра-ретрит с Балакхилья",
     slug: "mantra-retrit",
     location:
-      "40 км от МКАД - на просторной базе отдыха в Подмосковье (Горнолыжный курорт Леонида Тягачева)",
+      "40 км от МКАД",
     region: "podmoskovie",
     duration: "5days",
     durationText: "5 дней",
@@ -275,7 +275,7 @@ export const programs = [
     title: "ЯРадОм",
     slug: "yaradom",
     location:
-      "15 км. от Москвы по Ленинградскому шоссе вблизи деревни Шемякино, на берегу реки Клязьма.",
+      "15 км от Москвы",
     region: "podmoskovie",
     duration: "4days",
     durationText: "4 дня",
@@ -348,7 +348,7 @@ export const programs = [
     title: "Обновление",
     slug: "OLGA ONYX",
     location:
-      'Ретритный дом "Тишина" в Истринском районе с большой зеленной территорией всего в 25 км от Москвы по Волоколамскому шоссе.',
+      '25 км от Москвы',
     region: "podmoskovie",
     duration: "weekend",
     durationText: "2-3 дня",
