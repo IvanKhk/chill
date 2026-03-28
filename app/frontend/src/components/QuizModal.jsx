@@ -53,8 +53,9 @@ export const QuizModal = ({ isOpen, onClose, onComplete }) => {
   return (
     <Dialog open={isOpen} onOpenChange={handleClose}>
       <DialogContent 
-        className="sm:max-w-lg bg-card border-border p-0 overflow-hidden"
-        data-testid="quiz-modal"
+        className="sm:max-w-lg bg-[rgba(5,17,15,0.9)] backdrop-blur-xl 
+        border border-primary/20 p-0 overflow-hidden shadow-2xl"
+       data-testid="quiz-modal"
       >
         <DialogTitle className="sr-only">Подбор программы</DialogTitle>
         

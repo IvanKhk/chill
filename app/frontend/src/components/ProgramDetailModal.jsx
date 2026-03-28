@@ -43,7 +43,8 @@ export const ProgramDetailModal = ({ program, isOpen, onClose }) => {
   return (
     <Dialog open={isOpen} onOpenChange={onClose}>
       <DialogContent 
-        className="max-w-3xl max-h-[90vh] bg-card border-border p-0 overflow-hidden"
+        className="max-w-3xl max-h-[90vh] bg-[rgba(5,17,15,0.9)] backdrop-blur-xl 
+        border border-primary/20 p-0 overflow-hidden shadow-2xl"
         data-testid="program-detail-modal"
       >
         <DialogTitle className="sr-only">{program.title}</DialogTitle>

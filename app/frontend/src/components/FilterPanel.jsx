@@ -13,7 +13,8 @@ export const FilterPanel = ({ filters, onFilterChange, onClearFilters }) => {
 
   return (
     <div 
-      className="glass rounded-2xl p-4 md:p-6"
+      className="rounded-2xl p-4 md:p-6 border border-primary/20 
+                 bg-[rgba(5,17,15,0.9)] backdrop-blur-xl shadow-2xl"
       data-testid="filter-panel"
     >
       <div className="flex items-center justify-between mb-4">
@@ -54,7 +55,7 @@ export const FilterPanel = ({ filters, onFilterChange, onClearFilters }) => {
             >
               <SelectValue />
             </SelectTrigger>
-            <SelectContent className="bg-card border-border">
+            <SelectContent className="bg-[rgba(5,17,15,0.95)] backdrop-blur-xl border border-primary/20">
               {filterOptions.region.map((option) => (
                 <SelectItem key={option.value} value={option.value}>
                   {option.label}
