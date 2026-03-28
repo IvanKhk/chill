@@ -18,7 +18,7 @@ export const HeroSection = ({ onQuizOpen, onCatalogScroll }) => {
         className="absolute inset-0 z-0"
         style={{
           backgroundImage:
-            'url(https://images.unsplash.com/photo-1506905925346-21bda4d32df4?w=1920&q=80)',
+            'https://alpgreensolutions.com/en/wp-content/uploads/sites/13/slider/cache/151e86f8498629baa0daae4f55b95fd5/fullwidthbg2.jpg',
           backgroundSize: "cover",
           backgroundPosition: "center",
           backgroundRepeat: "no-repeat",
